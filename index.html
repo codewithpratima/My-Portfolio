@@ -1,0 +1,810 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pratima Sahu | Full Stack Web Developer</title>
+    <meta name="google-site-verification" content="_EAy-sTkAe6Mdp-9-0Q2lwj9Te3AIUwFOpE2bOW_dfU" />
+    <meta name="description" content="Hello, I am Pratima Sahu, Full-stack web developer, I want to make things
+    that make a difference.">
+    
+    <link rel="shortcut icon" href="./Priyankasahu.ico" type="image/x-icon">
+    <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        .divider {
+            display: block;
+            margin: -5px 0 16px 0;
+            max-width: 150px;
+            border-bottom: 2px dashed #9FA2AB;
+        }
+
+
+        @media only screen and (max-width: 600px) {
+            #navbar {
+                display: none;
+            }
+        }
+
+
+        .hover-underline-animation {
+            display: inline-block;
+            position: relative;
+        }
+
+        .hover-underline-animation:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #ea580c;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+
+        .hover-underline-animation:hover:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        #closemenu,
+        #tribloopBlock,
+        #greymetricsBlock,
+        #tcsBlock,
+        #videoform,
+        #pkforms,
+        #eent {
+            display: none;
+        }
+
+
+        /* Toggle A */
+        input:checked~.dot {
+            transform: translateX(100%);
+            background-color: #4338ca;
+        }
+    </style>
+ 
+</head>
+
+<body class="antialiased relative text-gray-600 ">
+
+
+
+
+    <header class=" sticky md:hidden lg:hidden top-0 z-50">
+        <!-- <h1> pks </h1> -->
+
+        <!-- mobile header bar -->
+        <div class="bg-white text-blue-700 shadow-2xl  flex justify-between md:hidden leading-none dark:bg-gray-900">
+            <a href="#" class="px-4 py-2 text-blue-700  font-bold dark:text-indigo-500 ">Priyanka Sahu <br> <span
+                    class="font-light text-xs"> Full Stack Developer </span> </a>
+            <!-- mobile menu button -->
+            <button class="mobile-menu-button p-3 mr-1 focus:outline-none text-xl dark:text-indigo-500">
+
+                <ion-icon id="gridmenu" name="menu"></ion-icon>
+                <ion-icon id="closemenu" name="close"></ion-icon>
+            </button>
+        </div>
+
+        <!-- Mobile header ends -->
+
+        <!-- Mobile nav bar starts -->
+
+        <div
+            class="sidebar bg-white w-40 space-y-1 py-0  md:py-7 absolute inset-y-11 left-0 transform -translate-x-full md:relative  transition duration-200 ease-in-out">
+
+            <!-- logo -->
+            <span class="hidden md:block">
+
+                <a href="#" class="text-blue-700 flex items-center space-x-1 px-1 ">
+
+                    <span class="text-4xl font-thin">Pratima Sahu</span>
+
+                </a><span class=" text-gray-600"> Full Stack Developer </span>
+                <div class="mt-6">
+                    <hr class=" border-zinc-500">
+                </div>
+
+            </span>
+            <br/>
+            <nav class="bg-white shadow-lg mt-9  dark:bg-gray-900" onclick="hideMobilenav()">
+
+
+                <a href="#"
+                    class="block text-gray-600 dark:text-gray-300 py-2 px-6 m-1 rounded-lg transition duration-200   focus:bg-blue-700 focus:text-white navBtn">
+                    <ion-icon class="text-blue-500" name="person"></ion-icon> &nbsp; About
+                </a>
+                <a href="#experience"
+                    class="block text-gray-600 dark:text-gray-300 py-2.5 px-6 rounded transition duration-200  focus:bg-blue-700 focus:text-white navBtn">
+
+                    <ion-icon class="text-red-600" name="trending-up"></ion-icon>&nbsp; Experience
+                </a>
+                <a href="#projects"
+                    class="block text-gray-600  dark:text-gray-300 py-2.5 px-6 rounded transition duration-200    focus:bg-blue-700 focus:text-white navBtn">
+                    <ion-icon class="text-cyan-800 " name="pie-chart"></ion-icon>&nbsp; Projects
+                </a>
+                <a href="#skills"
+                    class="block text-gray-600 dark:text-gray-300 py-2.5 px-6 rounded transition duration-200  focus:bg-blue-700 focus:text-white navBtn">
+                    <ion-icon class="text-indigo-800" name="code-slash"></ion-icon>&nbsp; Skills
+                </a>
+                <a href="#education"
+                    class="block text-gray-600 dark:text-gray-300 py-2.5 px-6 rounded transition duration-200   focus:bg-blue-700 focus:text-white navBtn">
+                    <ion-icon class="text-yellow-600" name="school"></ion-icon>&nbsp; Education
+                </a>
+
+                <a href="#contact"
+                    class="block text-gray-600 dark:text-gray-300 py-2.5 px-6 rounded transition duration-200 focus:bg-blue-700 focus:text-white navBtn">
+                    <ion-icon class="text-pink-700" name="mail-open"></ion-icon>&nbsp; Contact
+                </a>
+             
+
+
+            </nav>
+        </div>
+        <!-- Mobile nav bar ends -->
+
+    </header>
+
+    <div class="absolute w-full min-h-screen ">
+
+
+        <div class="absolute z-0 top-0 w-full h-1/2 bg-cover bg-bottom pt-20 px-12 text-white text-center  object-contain"
+            style="background-image: url('https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_640.jpg')">
+
+
+        </div>
+
+
+
+        <div class="absolute    z-20 bottom-10 right-0 left-0 inline-flex space-x-20 justify-center font-bold uppercase tracking-wide text-gray-600 dark:text-indigo-500   "
+            id="navbar">
+            <a href="#" class=" hover-underline-animation">ABOUT</a>
+            <a href="#experience" class="hover-underline-animation">EXPERIENCE</a>
+            <a href="#projects" class="hover-underline-animation">PROJECTS</a>
+            <a href="#skills" class="hover-underline-animation">SKILLS</a>
+            <a href="#education" class="hover-underline-animation">EDUCATION</a>
+            <a href="#contact" class="hover-underline-animation">CONTACT</a>
+            <!-- <a href="../assets/Priyanka-Sahu-Resume.pdf" download="Priyanka-Sahu-Resume.pdf"
+                class="hover-underline-animation">RESUME</a> -->
+        </div>
+
+
+    </div>
+    <div class="relative z-10 flex min-h-screen h-auto justify-center items-center dark:bg-gray-900 ">
+       
+    
+        <div class="relative max-w-4xl">
+            <div
+                class="absolute z-10 inset-0 bg-gradient-to-r from-blue-800 to-orange-600 dark:from-indigo-700 dark:to-orange-900  shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-lg">
+            </div>
+            <div
+                class="relative z-20 bg-white dark:bg-black md:flex justify-between p-12 shadow-lg rounded-lg w-full max-w-4xl">
+                <div class="sm:flex flex-col justify-between space-y-6 py-6 md:pr-10 dark:text-gray-400">
+                    <div>
+                        <h2 class="text-lg">Hello, I am</h2>
+                        <h1 class="pt-1 text-5xl font-bold text-blue-500">
+                            Pratima Sahu
+                        </h1>
+                    </div>
+                    <p class="text-xl mt-0 leading-relaxed">
+                        Full-stack web developer. I want to make things
+                        that make a difference.
+                    </p>
+                    <div class="inline-flex text-xl text-gray-600 dark:text-gray-300 space-x-5">
+                       
+
+                        <a href="https://www.linkedin.com/in/pratima-sahu-a69884234/" target="_blank">
+                            <ion-icon name="logo-linkedin" class="hover:text-blue-700"></ion-icon>
+                        </a>
+                        <a href="https://github.com/codeWithpratima/" target="_blank">
+                            <ion-icon name="logo-github" class="hover:text-black dark:hover:text-white"></ion-icon>
+                        </a>
+
+                        <div class="flex items-center justify-center w-full mb-12">
+                            <div class="mr-3 text-gray-500 font-normal text-sm ">
+                                Theme
+                            </div>
+                            <label for="toogleA" class="flex items-center cursor-pointer">
+                                <div class="relative">
+                                    <input id="toogleA" type="checkbox" onclick="toggleDarkClass()" class="sr-only" />
+                                    <div class="w-12 h-6 bg-gray-50 dark:bg-gray-900 rounded-full shadow-inner">
+                                        <ion-icon class="text-indigo-500 text-xs ml-1 mb-1" name="moon"></ion-icon>
+                                        <ion-icon class="text-orange-500 text-xs ml-2 mb-1" name="sunny"></ion-icon>
+                                    </div>
+
+                                    <div
+                                        class="dot absolute w-6 h-6 mt-1  bg-white rounded-full shadow -left-0 -top-1 transition">
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+
+                      
+
+                    </div>
+                </div>
+                <img width="320" height="350" class = "object-cover" src="images/work/mona.png" alt="Pratima-sahu"
+                    class="flex-shrink-0 w-80 rounded-xl border-6 border-white dark:border-gray-900 shadow-md" />
+
+            </div>
+        </div>
+    </div>
+    <section id="experience" class="bg-gray-50 pt-20 pb-28 px-8 dark:bg-black">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center">
+                <h1 class="text-6xl font-bold text-gray-800 dark:text-gray-300">EXPERIENCE</h1>
+                <p class="pt-2 dark:text-gray-300">Here's what I Learned</p>
+            </div>
+            <div class="mt-24 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-20">
+                <div class="relative">
+                    <div
+                        class="absolute z-10 inset-0 bg-gradient-to-r from-blue-800  to-orange-600 dark:from-indigo-700 dark:to-orange-900 shadow-lg transform -skew-y-3 sm:skew-y-0 sm:-rotate-3 sm:rounded-lg">
+                    </div>
+
+                    <div class="relative z-20 bg-white h-full rounded-md shadow-md px-10 py-8 dark:bg-gray-900">
+                        <h2 class="pt-1 font-bold text-2xl dark:text-indigo-500">
+                            Online Learn
+                        </h2>
+                        <span class=" text-sm font-normal text-gray-600 dark:text-gray-400">Self learner (<i>2021 -
+                                 2023, Online</i>) </span>
+                        <ul class="pt-3 text-xl dark:text-gray-400 list-disc ml-4">
+                        
+                            <li>
+                                In the journey of becoming full stack developer i have learned <strong> HTML, CSS, JS,  Tailwind CSS, React.js,
+                                MongoDB,   </strong> and <strong>Next.js </strong>.
+                            </li>
+                            
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="relative">
+                    <div
+                        class="absolute z-10 inset-0 bg-gradient-to-r from-blue-800  to-orange-600 dark:from-indigo-700 dark:to-orange-900 shadow-lg transform -skew-y-3 sm:skew-y-0 sm:-rotate-3 sm:rounded-lg">
+                    </div>
+
+                    <div class="relative z-20 bg-white h-full rounded-md shadow-md px-10 py-8 dark:bg-gray-900">
+
+                        <h2 class="pt-1 dark:text-indigo-500 font-bold text-2xl">
+                            Ravulapati Techub Pvt. Ltd. 
+                        </h2> <span class=" text-sm font-normal text-gray-600 dark:text-gray-400">Next.js Developer intern
+                            (<i>Sept 2024 - Present, Online</i>)</span>
+                            <ul class="pt-3 text-xl dark:text-gray-400 list-disc ml-4">
+                                <li>
+                                    Worked in various <strong>api routes</strong> like <strong>GET, PUT, POST, DELETE etc</strong>.
+                                </li>
+                                    <li>I learned <strong>tailwind css</strong>, <strong>Next.js</strong> and <strong>React.js</strong></li>
+                                <li>
+                                    Worked with form fields, it's <strong> validation</strong>, <strong>dropdowns</strong>, implemented <strong>rest apis </strong> in frontend, tested api in thunderclient and <strong>postman </strong>. 
+                                </li>
+                                
+                            </ul>
+
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 px-8 dark:bg-gray-900">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center">
+                <h1 class="text-6xl font-bold text-gray-800 dark:text-gray-200">PROJECTS</h1>
+                <p class="pt-2 dark:text-gray-200">The best of my works</p>
+            </div>
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-14">
+
+
+                <div class="bg-white rounded-md shadow-md dark:bg-black">
+                    <div class="relative">
+
+
+                        <!-- back card -->
+                        <div class="absolute  z-10 inset-0 bg-white  dark:bg-black dark:text-gray-300  px-10 py-8 rounded-md  "
+                            id="pkforms">
+                            <h1 class="text-2xl font-medium dark:text-indigo-500"> Accomplishments <span
+                                    onclick="hideBlock('pkforms')">
+                                    <ion-icon class="text-2xl hover:text-blue-600 cursor-pointer float-right mt-1"
+                                        name="close"></ion-icon>
+                                </span> </h1>
+
+                                <ul class="list-disc ml-4 mt-5">
+                                    <li class="mb-2">
+                                        Used <strong> Next.js</strong> and <strong> Tailwind Css</strong>  on it.
+                                    </li>
+                                    <li class="mb-2">
+                                        Worked with varius <strong>apis </strong>  like <strong> GET, POST, PUT </strong> etc.
+                                    </li>
+                                    <li class="mb-2">
+                                        It's a <strong>real world project </strong>  so i learned a lot from it.
+                                    </li>
+    
+                                </ul>
+                        </div>
+
+                        
+
+
+                        <div class="px-1">
+                            <img loading="lazy" onclick="showAcomBlock('pkforms')" src="./images/work/portal.jpg"  alt=""
+                                class="object-contain cursor-pointer rounded-md w-full h-95" />
+                            </div>
+                            <div class="p-6 ">
+                                <h3 class="font-bold text-2xl dark:text-indigo-500">Shiva-Shakti-Portal</h3>
+                                <p class="pt-3 text-xl text-xl-gray-300">
+                                    I worked on it and collaborated in varius part of this project.
+                                </p>
+                                <a href="https://shivashakthi-portal.ssgcapps.in/" class="text-blue-500" target="_blank">View Project</a>
+                            </div>
+
+                    </div>
+
+
+                </div>
+
+ 
+
+                    </div>
+
+
+                </div>
+
+ 
+
+
+                    
+
+                        
+
+                   
+                               
+
+
+                        
+                         
+
+
+           
+                
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="bg-gray-50 py-20 px-8 dark:bg-black">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center ">
+                <h1 class="text-6xl font-bold text-gray-800 dark:text-gray-300">SKILLS</h1>
+                <p class="pt-2 dark:text-gray-300">Things I know</p>
+            </div>
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-14">
+
+                <!-- div starts -->
+                <div class="bg-white rounded-md shadow-md col-span-1 hover:shadow-xl dark:bg-gray-900">
+                    <div class="p-8 dark:text-gray-300">
+                        <h3 class="font-bold text-2xl dark:text-indigo-500">HTML</h3>
+                        <div class="pt-3 text-xl">
+                            HTML 5
+                            <div class="w-full bg-gray-200 dark:bg-gray-400 h-3 mb-6">
+                                <div class=" h-3 bg-blue-600 dark:bg-orange-700" style="width: 90%;"></div>
+                            </div>
+
+                            <!-- EJS
+                            <div class="w-full bg-gray-200 dark:bg-gray-400 h-3 mb-6">
+                                <div class="bg-blue-600 h-3 dark:bg-orange-700" style="width: 70%"></div>
+                            </div> -->
+                            JSX
+                            <div class="w-full bg-gray-200 dark:bg-gray-400 h-3 mb-6">
+                                <div class="bg-blue-600 h-3 dark:bg-orange-700" style="width: 50%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- div ends -->
+                <!-- div starts -->
+                <div class="bg-white rounded-md shadow-md col-span-1 hover:shadow-xl dark:bg-gray-900 ">
+                    <div class="p-8 dark:text-gray-300">
+                        <h3 class="font-bold text-2xl dark:text-indigo-500">CSS</h3>
+                        <div class="pt-3 text-xl">
+                            CSS 3
+                            <div class="w-full bg-gray-200  dark:bg-gray-400 h-3 mb-6">
+                                <div class="bg-blue-600 h-3 dark:bg-orange-700" style="width: 90%"></div>
+                            </div>
+
+                            Bootstrap
+                            <div class="w-full bg-gray-200 dark:bg-gray-400 h-3 mb-6">
+                                <div class="bg-blue-600 h-3 dark:bg-orange-700" style="width: 85%"></div>
+                            </div>
+                            Tailwind CSS
+                            <div class="w-full bg-gray-200 dark:bg-gray-400 h-3 mb-6">
+                                <div class="bg-blue-600 h-3 dark:bg-orange-700" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- div ends -->
+
+                <!-- div starts -->
+                <div class="bg-white rounded-md shadow-md col-span-1 hover:shadow-xl dark:bg-gray-900">
+                    <div class="p-8 dark:text-gray-300">
+                        <h3 class="font-bold text-2xl dark:text-indigo-500">JavaScript</h3>
+                        <div class="pt-3 text-xl">
+                            JavaScript
+                            <div class="w-full bg-gray-200 dark:bg-gray-400 h-3 mb-6">
+                                <div class="bg-blue-600 h-3 dark:bg-orange-700" style="width: 75%"></div>
+                            </div>
+                            <!-- jQuery
+                            <div class="w-full bg-gray-200 dark:bg-gray-400 h-3 mb-6">
+                                <div class="bg-blue-600 h-3 dark:bg-orange-700" style="width: 80%"></div>
+                            </div> -->
+
+                            TypeScript
+                            <div class="w-full bg-gray-200 dark:bg-gray-400 h-3 mb-6">
+                                <div class="bg-blue-600 h-3 dark:bg-orange-700" style="width: 10%"></div>
+                            </div>
+                            React
+                            <div class="w-full bg-gray-200 dark:bg-gray-400 h-3 mb-6">
+                                <div class="bg-blue-600 h-3 dark:bg-orange-700" style="width: 60%"></div>
+                            </div>
+                            Next.js
+                            <div class="w-full bg-gray-200 dark:bg-gray-400 h-3 mb-6">
+                                <div class="bg-blue-600 h-3 dark:bg-orange-700" style="width: 60%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- div ends -->
+
+                <!-- div starts -->
+                <div class="bg-white rounded-md shadow-md col-span-1 hover:shadow-xl dark:bg-gray-900">
+                    <div class="p-8 dark:text-gray-300">
+                        <h3 class="font-bold text-2xl dark:text-indigo-500">Back-End</h3>
+                        <div class="pt-3 text-xl">
+                            NodeJS with Express
+                            <div class="w-full bg-gray-200 dark:bg-gray-400 h-3 mb-6">
+                                <div class="bg-blue-600 h-3 dark:bg-orange-700" style="width: 85%"></div>
+                            </div>
+                       
+
+                            MongoDB
+                            <div class="w-full bg-gray-200 dark:bg-gray-400 h-3 mb-6">
+                                <div class="bg-blue-600 h-3 dark:bg-orange-700" style="width: 75%"></div>
+                            </div>
+                          
+
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="bg-white rounded-md shadow-md col-span-1 hover:shadow-2xl dark:bg-gray-900">
+                    <div class="p-8 dark:text-gray-300">
+                        <h3 class="font-bold text-2xl dark:text-indigo-500">Dev Tools</h3>
+                        <div class="pt-3 text-xl">
+                            VS Code
+                            <div class="w-full bg-gray-200 dark:bg-gray-400 h-3 mb-6">
+                                <div class="bg-blue-600 h-3 dark:bg-orange-700" style="width: 90%"></div>
+                            </div>
+                            Postman
+                            <div class="w-full bg-gray-200 dark:bg-gray-400 h-3 mb-6">
+                                <div class="bg-blue-600 h-3 dark:bg-orange-700" style="width: 75%"></div>
+                            </div>
+
+                          
+
+
+
+                        </div>
+                    </div>
+                </div>
+                
+
+
+ 
+
+
+            </div>
+        </div>
+    </section>
+   
+
+    <section id="education" class="py-20 px-8 dark:bg-gray-900">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center">
+                <h1 class="text-6xl font-bold text-gray-800 dark:text-gray-300">EDUCATION</h1>
+                <p class="pt-2 dark:text-gray-300">Here's my knowledge comes</p>
+            </div>
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-14">
+
+
+                <!-- card 1 -->
+                <div class=" rounded-md shadow-md  hover:shadow-xl  ">
+
+                    <div class="relative">
+                        <div
+                            class="absolute z-10 inset-0  bg-gradient-to-r from-blue-800  to-orange-600 dark:from-indigo-700 dark:to-orange-900 shadow-lg transform -skew-y-3  sm:skew-y-0 sm:-rotate-3  sm:rounded-lg">
+                        </div>
+
+                        <div class="relative p-8 z-20 bg-white rounded-lg dark:bg-black">
+                            <h3 class="font-bold text-2xl dark:text-indigo-500">Govt. E R. R. Science P.G. College Bilaspur(CG)
+                            </h3>
+                            <span class=" text-sm font-normal text-gray-500  dark:text-gray-300">Bilaspur, Chhattisgarh
+                                (<i> 2021 -2024
+                                </i>)</span>
+                            <p class="pt-3 text-xl text-xlul class="list-disc ml-4 dark:text-gray-300">
+                                <li> B.Sc (IT Honors)</li>
+                             
+                            </ul>
+                            </p>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- card 2 -->
+                <div class=" rounded-md shadow-md  hover:shadow-xl">
+
+                    <div class="relative">
+                        <div
+                            class="absolute z-10 inset-0  bg-gradient-to-r from-blue-800  to-orange-600 dark:from-indigo-700 dark:to-orange-900 shadow-lg transform -skew-y-3  sm:skew-y-0 sm:-rotate-3  sm:rounded-lg">
+                        </div>
+
+                        <div class="relative p-8 z-20 bg-white rounded-lg dark:bg-black">
+                            <h3 class="font-bold text-2xl dark:text-indigo-500">S S M Masturi Bilaspur(CG)
+                            </h3>
+                            <span class=" text-sm font-normal text-gray-500  dark:text-gray-300">Bilaspur, Chhattisgarh
+                                (<i> 2019-2020 </i>)</span>
+                            <p class="pt-3 text-xl text-xlul class="list-disc ml-4 dark:text-gray-300">
+                                <li> 12th - PCM </li>
+                            </ul>
+                            </p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+   
+
+    <section id="contact" class="pt-24 pb-24 px-8  bg-black">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center">
+                <h1 class="text-6xl font-bold text-gray-300">Contact</h1>
+                <p class="pt-2 text-gray-300">Get in touch with me</p>
+            </div>
+        </div>
+
+        <div class="mt-24 md:px-64 lg:px-64 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-14">
+            <!-- card 1 -->
+           
+            <!-- card 1 ends -->
+
+
+            <div class="relative">
+                <div
+                    class="absolute z-10 inset-0  bg-gradient-to-r from-indigo-700  to-orange-900 shadow-lg transform -skew-y-3  sm:skew-y-0 sm:-rotate-3  sm:rounded-lg">
+                </div>
+
+                <div class=" text-center relative z-20 bg-gray-900 h-full rounded-md shadow-md px-10 py-8">
+
+                    <h2 class="pt-1 font-bold text-2xl text-gray-300 dark:text-indigo-500">
+                        Contact me
+                    </h2>
+                    <p class="pt-3 text-xl text-xlul class="text-gray-400 ">
+                        <li> pratimaksahu60@gmail.com</li>
+                        <li> +91 7805073043</li>
+                
+                    </ul>
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="relative">
+                <div
+                    class="absolute z-10 inset-0  bg-gradient-to-r from-indigo-700  to-orange-900 shadow-lg transform -skew-y-3  sm:skew-y-0 sm:-rotate-3  sm:rounded-lg">
+                </div>
+
+                <div class="text-center relative z-20 bg-gray-900 h-full rounded-md shadow-md px-10 py-8">
+
+                    <h2 class="pt-1 font-bold text-gray-300 text-2xl dark:text-indigo-500">
+                        Follow me
+                    </h2>
+                    <p class="pt-3 text-xl text-xlul class=" text-gray-400 ">
+                        <li> <a href="https://www.linkedin.com/in/pratima-sahu-a69884234/" target="_blank"
+                            class="hover:text-blue-700">
+                            <ion-icon name="logo-linkedin"></ion-icon> LinkedIn
+                        </a></li>
+                        <li> <a href="https://github.com/codeWithpratima/" target="_blank" class="hover:text-white">
+                            <ion-icon name="logo-github"></ion-icon> Github
+                        </a></li>
+
+                       
+                   
+                      
+                       
+                    </ul>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-6xl mx-auto mt-32">
+            <div class="text-center">
+                <p class="pt-2 font-medium text-xs text-indigo-800">&copy; Copyright 2022 Pratimasahu.com<br> All rights
+                    reserved. </p>
+            </div>
+        </div>
+        </div>
+
+
+    </section>
+    
+
+    <script>
+
+// document.getElementById("toogleA").checked = true;
+
+        const btn = document.querySelector(".mobile-menu-button");
+        const sidebar = document.querySelector(".sidebar");
+        var gridmenu = document.getElementById("gridmenu");
+        var closemenu = document.getElementById("closemenu");
+
+
+        var counter = 1;
+        btn.addEventListener("click", () => {
+
+
+            console.log(counter);
+            sidebar.classList.toggle("-translate-x-full");
+
+
+            if (counter == 1) {
+                gridmenu.style.display = "none";
+                closemenu.style.display = "block";
+            } else {
+                if (closemenu.style.display === "none") {
+                    gridmenu.style.display = "none";
+                    closemenu.style.display = "block";
+                } else {
+                    gridmenu.style.display = "block";
+                    closemenu.style.display = "none";
+                }
+            }
+
+
+            counter++;
+        });
+
+
+        function hideMobilenav() {
+
+            console.log("herere");
+            sidebar.classList.toggle("-translate-x-full");
+            gridmenu.style.display = "block";
+            closemenu.style.display = "none";
+        }
+
+
+        function showAcomBlock(blockId) {
+            console.log(blockId, "blockId");
+
+
+
+            switch (blockId) {
+
+                case "tibleloop":
+                    // code block
+                    console.log("first");
+                    var tribloopBlock = document.getElementById("tribloopBlock");
+                    tribloopBlock.style.display = "block";
+                    break;
+                case "greymetricsBlock":
+                    // code block
+
+                    var greymetricsBlock = document.getElementById("greymetricsBlock");
+                    greymetricsBlock.style.display = "block";
+                    break;
+                case "tcs":
+                    // code block
+
+                    var tcsBlock = document.getElementById("tcsBlock");
+                    tcsBlock.style.display = "block";
+                    break;
+                case "videoform":
+                    // code block
+
+                    var videoform = document.getElementById("videoform");
+                    videoform.style.display = "block";
+                    break;
+                case "pkforms":
+                    // code block
+
+                    var pkforms = document.getElementById("pkforms");
+                    pkforms.style.display = "block";
+                    break;
+
+                    case "eent":
+                    // code block
+
+                    var eent = document.getElementById("eent");
+                    eent.style.display = "block";
+                    break;
+                default:
+                // code block
+            }
+
+
+        }
+        function hideBlock(blockId) {
+
+            switch (blockId) {
+
+                case "tribeloop":
+                    var tribloopBlock = document.getElementById("tribloopBlock");
+                    tribloopBlock.style.display = "none";
+                    break;
+                case "greymetrics":
+
+                    var greymetricsBlock = document.getElementById("greymetricsBlock");
+                    greymetricsBlock.style.display = "none";
+                    break;
+                case "tcs":
+
+                    var tcsBlock = document.getElementById("tcsBlock");
+                    tcsBlock.style.display = "none";
+                    break;
+                case "videoform":
+
+                    var videoform = document.getElementById("videoform");
+                    videoform.style.display = "none";
+                    break;
+
+                    case "pkforms":
+
+                    var pkforms = document.getElementById("pkforms");
+                    pkforms.style.display = "none";
+                    break;
+
+                case "eent":
+
+                    var eent= document.getElementById("eent");
+                    eent.style.display = "none";
+                    break;
+                default:
+                // code block
+            }
+
+
+        }
+
+        function toggleDarkClass() {
+            var element = document.querySelector("body");
+            element.classList.toggle("dark");
+        }
+
+
+    </script>
+
+</body>
+
+</html>
